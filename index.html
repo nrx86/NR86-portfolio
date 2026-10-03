@@ -1,93 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404: Limits Not Found 🚀</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.8.0</title>
 
-    body {
-      height: 100vh;
-      background: url('Image.png') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      text-align: center;
-      position: relative;
-    }
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
 
-    /* Overlay for readability */
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-      z-index: 0;
-    }
+  <!-- Your stylesheet. All of your work happens in main.css. -->
+  <link rel="stylesheet" href="main.css">
 
-    .container {
-      z-index: 1;
-      animation: fadeIn 2s ease-in-out;
-    }
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
 
-    h1 {
-      font-size: 3.5rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      text-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
-      animation: glow 2s infinite alternate;
-    }
+  <!-- include source files here... -->
+  <script src="src/app.js"></script>
 
-    p {
-      margin: 20px 0;
-      font-size: 1.2rem;
-      color: #ddd;
-    }
+  <!-- include spec files here... -->
+  <script src="tests/FunctionsTest.js"></script>
 
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      background: linear-gradient(45deg, #00f7ff, #ef680d);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-      box-shadow: 0 0 15px #00f7ff;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 25px #eb7105;
-    }
-
-    /* Animations */
-    @keyframes glow {
-      from { text-shadow: 0 0 20px #00f7ff; }
-      to { text-shadow: 0 0 40px #e08618; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Welcome🚀</h1>
-    <p>Engineering Aspirant | Tech Enthusiast | Future Innovator</p>
-    <a href="portfolio.html" class="btn">View My Portfolio</a>
+  <!-- ================================================================
+       DO NOT EDIT THIS MARKUP. Do all of your work in main.css.
+
+       Build a classic PAGE LAYOUT SKELETON with CSS Grid:
+         - a full-width HEADER across the top
+         - a SIDEBAR and MAIN content side by side in the middle
+         - a full-width FOOTER across the bottom
+       ================================================================ -->
+
+  <div class="page">
+    <header class="site-header">Header</header>
+    <aside class="sidebar">Sidebar</aside>
+    <main class="content">Main content</main>
+    <footer class="site-footer">Footer</footer>
   </div>
+
 </body>
+
 </html>
