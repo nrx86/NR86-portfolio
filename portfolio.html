@@ -1,178 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikhil Raj|Developer Portfolio</title>
+  <meta name="description" content="Nikhil Raj's developer portfolio">
+
+  <title>Nikhil Raj | Developer Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="portfolio-page">
+
   <!-- Navigation -->
-  <nav>
-    <a href="#about" class="active">About</a>
-    <a href="#journey">Journey</a>
-    <a href="#projects">Projects</a>
-    <a href="#future">Future</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Header with Profile Photo -->
-  <header>
-    <img src="PFP.jpeg" alt="Head and shoulders portrait of Nikhil, a young man with a warm, confident expression, wearing a casual outfit, set against a simple neutral background, with a friendly, professional tone and the text Nikhil's Portfolio in the page header">
-    <h1>Nikhil's Portfolio 🔥</h1>
-    <p>B.Tech CSE | Future Software Engineer</p>
+  <!-- Profile Header -->
+  <header class="profile-header">
+    <img src="PFP.jpeg" alt="Nikhil Raj">
+    <p class="eyebrow">HELLO, I'M</p>
+    <h1>Nikhil Raj<span>.</span></h1>
+    <p class="profile-subtitle">
+      B.Tech CSE Student | Aspiring Software Engineer
+    </p>
   </header>
 
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Hi, I'm Nikhil.<br><br>
-         An aspiring Software Engineer passionate about Web Development, AI, and Problem Solving.<br><br>
-         I am starting my B.Tech CSE journey and continuously building projects while improving my coding skills.
-      </p>
-    </div>
-  </section>
+  <main>
 
-  <!-- Learning Journey -->
-  <section id="journey">
-    <h2>Learning Journey</h2>
-    <div class="card journey-list">
-      <p><span><b>Fundamentals Covered 📚</b></span></p>
-      ✓ HTML<br>
-      ✓ CSS<br>
-      ✓ Responsive Web Design<br>
-      ✓ Python Fundamentals<br>
-      ✓ Git & GitHub Basics<br>
-<br>
-      <p><span><b>Current Focus 🧑‍💻</b></span></p>
-      • JavaScript<br>
-      • React.js & Next.js (JSX/TSX)<br>
-      • TypeScript<br>
-      • Problem Solving (LeetCode)<br>
-<br>
-      <p><span><b>Next Goals 🚀</b></span></p>
-      □ Data Structures & Algorithms<br>
-      □ Advanced Python<br>
-      □ Advanced JavaScript<br>
-      □ SQL & Database Fundamentals<br>
-      □ Object-Oriented Programming (OOP)<br>
-<br>
-    </div>
-  </section>
+    <!-- About -->
+    <section id="about" class="content-section">
+      <p class="section-label">01 / INTRODUCTION</p>
+      <h2>About Me<span>.</span></h2>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Personal Portfolio Website</h3>
-      <p>A responsive portfolio website showcasing my skills, projects, and contact information.</p>
-      
-      <h3>To-Do App </h3>
-      <p>A simple to-do list application built with HTML, CSS, and JavaScript.</p>
-      
-      <h3>PixelPulse</h3>
-      <p>A modern web application built using HTML, CSS, and JavaScript.</p>
-        
-    </div>
+      <div class="card">
+        <p>
+          Hi, I'm Nikhil.
+        </p>
+        <p>
+          An aspiring Software Engineer passionate about
+          Web Development, AI, and Problem Solving.
+        </p>
+        <p>
+          I am pursuing my B.Tech in Computer Science
+          and continuously building projects while
+          improving my coding skills.
+        </p>
+      </div>
+    </section>
 
-  </section>
+    <!-- Learning Journey -->
+    <section id="journey" class="content-section">
+      <p class="section-label">02 / MY PROGRESS</p>
+      <h2>Learning Journey<span>.</span></h2>
+
+      <div class="card journey-card">
+
+        <div class="journey-group">
+          <h3>Fundamentals Covered 📚</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Web Design</li>
+            <li>Python Fundamentals</li>
+            <li>Git & GitHub Basics</li>
+          </ul>
+        </div>
+
+        <div class="journey-group">
+          <h3>Current Focus 🧑‍💻</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>React.js & Next.js</li>
+            <li>TypeScript</li>
+            <li>Problem Solving (LeetCode)</li>
+          </ul>
+        </div>
+
+        <div class="journey-group">
+          <h3>Next Goals 🚀</h3>
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Advanced Python</li>
+            <li>Advanced JavaScript</li>
+            <li>SQL & Database Fundamentals</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="content-section">
+      <p class="section-label">03 / WHAT I'VE BUILT</p>
+      <h2>Projects<span>.</span></h2>
+
+      <div class="project-grid">
+
+        <article class="card project-card">
+          <p class="project-number">PROJECT 01</p>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive portfolio website showcasing
+            my skills, projects, and contact information.
+          </p>
+          <p class="tech-label">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="card project-card">
+          <p class="project-number">PROJECT 02</p>
+          <h3>To-Do App</h3>
+          <p>
+            A simple task management application built
+            with HTML, CSS, and JavaScript.
+          </p>
+          <p class="tech-label">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="card project-card">
+          <p class="project-number">PROJECT 03</p>
+          <h3>PixelPulse</h3>
+          <p>
+            A modern web application built using
+            HTML, CSS, and JavaScript.
+          </p>
+          <p class="tech-label">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="card project-card">
+          <p class="project-number">PROJECT 04</p>
+          <h3>NextBites</h3>
+          <p>
+            A recipe discovery application with
+            search and dynamic recipe pages.
+          </p>
+          <p class="tech-label">Next.js · TypeScript</p>
+        </article>
+
+      </div>
+    </section>
 
     <!-- Future Projects -->
-  <section id="future">
-    <h2>Future Projects</h2>
-    <div class="card">
-      <ul class="future-list">
-        <li>Weather App 🌦️</li>
-        <li>Cricket Analytics Dashboard 🏏</li>
-        <li>AI Chat Assistant 🤖</li>
-        <li>Developer Dashboard 💻</li>
-      </ul>
-    </div>
-  </section>
+    <section id="future" class="content-section">
+      <p class="section-label">04 / WHAT'S NEXT</p>
+      <h2>Future Projects<span>.</span></h2>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Tech Stack</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">TypeScript</div>
-      <div class="skill">GitBash</div>
-      <div class="skill">GitHub</div>
-      <div class="skill">React.js</div>
-      <div class="skill">Next.js</div>
-    </div>
-  </section>
+      <div class="card">
+        <ul class="future-list">
+          <li>Weather App 🌦️</li>
+          <li>Cricket Analytics Dashboard 🏏</li>
+          <li>AI Chat Assistant 🤖</li>
+          <li>Developer Dashboard 💻</li>
+        </ul>
+      </div>
+    </section>
 
-   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="card">
-      <div class="contact-info">
+    <!-- Skills -->
+    <section id="skills" class="content-section">
+      <p class="section-label">05 / TECHNOLOGIES</p>
+      <h2>Tech Stack<span>.</span></h2>
+
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">Git Bash</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">React.js</span>
+        <span class="skill">Next.js</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-section">
+      <p class="section-label">06 / LET'S CONNECT</p>
+      <h2>Contact Me<span>.</span></h2>
+
+      <div class="card contact-card">
+
         <p>
-           <strong>Email:</strong> 
-          <a href="mailto:nrx86raj@gmail.com">nrx86raj@gmail.com</a>
-        </p>
-        <p>
-          <strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/nrx86" target="_blank">
-            linkedin.com/in/nrx_86
+          <strong>Email</strong>
+          <a href="mailto:nrx86raj@gmail.com">
+            nrx86raj@gmail.com
           </a>
         </p>
+
         <p>
-          <strong>Instagram:</strong> 
-          <a href="https://www.instagram.com/nrx_86?stkn=cHFjYXVhaDZtZXJ1" target="_blank">
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/nrx86
+          </a>
+        </p>
+
+        <p>
+          <strong>Instagram</strong>
+          <a href="https://www.instagram.com/nrx_86" target="_blank" rel="noopener noreferrer">
             instagram.com/nrx_86
           </a>
         </p>
+
+        <p>
+          <strong>GitHub</strong>
+          <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer">
+            github.com/nrx86
+          </a>
+        </p>
+
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>Nikhil Raj Singh | 2026</p>
-    <p> Built with ❤️ </p>
+  <footer class="portfolio-footer">
+    <p>© 2026 Nikhil Raj | All Rights Reserved.</p>
+    <p>Built with curiosity and code.</p>
+
     <div class="socials">
-      <a href="https://linkedin.com">
+
+      <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
         LinkedIn
       </a>
-      <a href="https://github.com">
+
+      <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
         GitHub
       </a>
-      <a href="https://instagram.com">
+
+      <a href="https://www.instagram.com/nrx_86" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
         Instagram
       </a>
+
     </div>
   </footer>
 
-  <!-- Active Nav Highlight Script -->
+  <!-- Active Navigation Script -->
   <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("main section");
+    const navLinks = document.querySelectorAll(".main-nav a");
 
-    window.addEventListener("scroll", () => {
+    function updateActiveLink() {
       let current = "";
+
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 70;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
+        const sectionTop = section.offsetTop - 140;
+
+        if (window.scrollY >= sectionTop) {
+          current = section.id;
         }
       });
 
       navLinks.forEach(link => {
         link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
+
+        if (link.getAttribute("href") === `#${current}`) {
           link.classList.add("active");
         }
       });
-    });
+    }
+
+    window.addEventListener("scroll", updateActiveLink);
+    updateActiveLink();
   </script>
+
 </body>
+
 </html>
