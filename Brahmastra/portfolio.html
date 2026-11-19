@@ -43,6 +43,11 @@
 
 <body class="portfolio-page">
 
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
   <!-- Navigation -->
   <nav class="main-nav" aria-label="Main navigation">
 
@@ -499,29 +504,79 @@
     </section>
 
 
-    <!-- Current Exploration -->
-    <section id="exploring" class="content-section">
+    <!-- =========================================
+         EXPLORING — FUTURE ROADMAP
+    ========================================= -->
+
+    <section id="exploring" class="content-section exploring-section">
 
       <p class="section-label">04 / WHAT'S NEXT</p>
 
       <h2>Currently Exploring<span>.</span></h2>
 
-      <div class="card">
+      <p class="exploring-intro">
+        There's always something new to learn.
+        These are the areas I'm curious about and
+        looking forward to exploring further.
+      </p>
 
-        <p>
-          Beyond my current projects, I'm interested
-          in developing a stronger understanding of:
-        </p>
+      <div class="exploring-grid">
 
-        <ul class="future-list">
-          <li>Data Structures and Algorithms</li>
-          <li>Advanced JavaScript</li>
-          <li>Backend Development</li>
-          <li>SQL and Database Fundamentals</li>
-          <li>Building applications with AI</li>
-        </ul>
+        <!-- 01 -->
+
+        <article class="card exploring-card">
+          <span class="exploring-number">01 /</span>
+          <div class="exploring-icon">⌘</div>
+          <h3>Data Structures & Algorithms</h3>
+          <p>Understanding efficient problem-solving approaches and core computer science concepts.</p>
+          <span class="exploring-tag">Computer Science</span>
+        </article>
+
+        <!-- 02 -->
+
+        <article class="card exploring-card">
+          <span class="exploring-number">02 /</span>
+          <div class="exploring-icon">{ }</div>
+          <h3>Advanced JavaScript</h3>
+          <p>Exploring deeper JavaScript concepts and building more interactive applications.</p>
+          <span class="exploring-tag">Programming</span>
+        </article>
+
+        <!-- 03 -->
+
+        <article class="card exploring-card">
+          <span class="exploring-number">03 /</span>
+          <div class="exploring-icon">⌘</div>
+          <h3>Backend Development</h3>
+          <p>Learning how server-side applications, APIs and backend systems work.</p>
+          <span class="exploring-tag">Development</span>
+        </article>
+
+        <!-- 04 -->
+
+        <article class="card exploring-card">
+          <span class="exploring-number">04 /</span>
+          <div class="exploring-icon">▤</div>
+          <h3>SQL & Databases</h3>
+          <p>Understanding how data is stored, organized, queried and managed.</p>
+          <span class="exploring-tag">Data</span>
+        </article>
+
+        <!-- 05 -->
+
+        <article class="card exploring-card exploring-featured">
+          <span class="exploring-number">05 /</span>
+          <div class="exploring-icon">✦</div>
+          <h3>Building Applications with AI</h3>
+          <p>Exploring how artificial intelligence can become part of useful, real-world applications.</p>
+          <span class="exploring-tag">Artificial Intelligence</span>
+        </article>
 
       </div>
+
+      <p class="exploring-footer">
+        Curious by nature. Building for the future.
+      </p>
 
     </section>
 
@@ -637,14 +692,16 @@
     </section>
 
     <!-- =====================================================
-         CONTACT — PREMIUM CLOSING SECTION
-    ===================================================== -->
+     CONTACT — PREMIUM CLOSING SECTION
+===================================================== -->
 
     <section id="contact" class="content-section contact-section">
 
       <p class="section-label">06 / GET IN TOUCH</p>
 
       <div class="contact-panel">
+
+        <!-- MAIN CONTENT -->
 
         <div class="contact-content">
 
@@ -671,18 +728,36 @@
         <div class="contact-divider"></div>
 
 
+        <!-- SOCIAL LINKS -->
+
         <div class="contact-socials">
 
-          <a href="mailto:nrx86raj@gmail.com" class="contact-social-link">
-            <span class="social-label">EMAIL</span>
-            <span class="social-value">nrx86raj@gmail.com ↗</span>
-          </a>
+          <!-- EMAIL -->
+
+          <div class="contact-social-item">
+
+            <a href="mailto:nrx86raj@gmail.com" class="contact-social-link">
+              <span class="social-label">EMAIL</span>
+              <span class="social-value">nrx86raj@gmail.com ↗</span>
+            </a>
+
+            <button type="button" class="copy-email-btn" id="copyEmailBtn">
+              Copy email address <span>⧉</span>
+            </button>
+
+          </div>
+
+
+          <!-- LINKEDIN -->
 
           <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer"
             class="contact-social-link">
             <span class="social-label">LINKEDIN</span>
             <span class="social-value">Connect with me ↗</span>
           </a>
+
+
+          <!-- GITHUB -->
 
           <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer" class="contact-social-link">
             <span class="social-label">GITHUB</span>
@@ -909,6 +984,51 @@
       });
 
     });
+
+
+    // COPY EMAIL TO CLIPBOARD
+
+    const copyEmailBtn = document.getElementById("copyEmailBtn");
+
+    if (copyEmailBtn) {
+      copyEmailBtn.addEventListener("click", async () => {
+
+        try {
+          await navigator.clipboard.writeText("nrx86raj@gmail.com");
+
+          copyEmailBtn.innerHTML = "Email copied ✓";
+
+          setTimeout(() => {
+            copyEmailBtn.innerHTML =
+              'Copy email address <span>⧉</span>';
+          }, 2000);
+
+        } catch (error) {
+          copyEmailBtn.textContent = "Copy unavailable";
+        }
+
+      });
+    }
+
+
+    // SCROLL PROGRESS INDICATOR
+
+    const progressBar = document.getElementById("scrollProgressBar");
+
+    if (progressBar) {
+      window.addEventListener("scroll", () => {
+        const scrollableHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+
+        const progress =
+          scrollableHeight > 0
+            ? (window.scrollY / scrollableHeight) * 100
+            : 0;
+
+        progressBar.style.width = `${progress}%`;
+      }, { passive: true });
+    }
+
 
   </script>
 
