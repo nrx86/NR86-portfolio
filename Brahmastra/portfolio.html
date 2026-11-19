@@ -6,16 +6,40 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO -->
+  <title>Nikhil Raj | Developer Portfolio — NR86</title>
+
   <meta name="description"
-    content="Explore Nikhil Raj's developer portfolio, projects, learning journey and technical interests.">
+    content="Explore Nikhil Raj's developer portfolio, featuring web development projects, Next.js applications, JavaScript experiments and his software development journey.">
 
   <meta name="author" content="Nikhil Raj">
 
-  <title>Nikhil Raj | Developer Portfolio</title>
+  <meta name="robots" content="index, follow">
 
-  <!-- Main Stylesheet -->
+  <meta name="theme-color" content="#08090A">
+
+  <!-- Open Graph: Social Sharing -->
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Nikhil Raj | Developer Portfolio">
+
+  <meta property="og:description"
+    content="Learning, building and exploring technology through practical projects. Explore the work of NR86.">
+
+  <meta property="og:url" content="https://nrx86.github.io/NR86-portfolio/">
+
+  <!-- Twitter / X Sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="Nikhil Raj | Developer Portfolio">
+
+  <meta name="twitter:description" content="Explore my projects and journey in software development.">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body class="portfolio-page">
 
@@ -58,58 +82,141 @@
 
   <main>
 
-    <!-- About Section -->
-    <section id="about" class="content-section">
+    <!-- =========================================
+       ABOUT — PERSONAL INTRODUCTION
+  ========================================= -->
+
+    <section id="about" class="content-section about-section">
 
       <p class="section-label">01 / INTRODUCTION</p>
 
-      <h2>About Me<span>.</span></h2>
+      <h2>A Little About Me<span>.</span></h2>
 
-      <div class="card">
+      <div class="about-layout">
 
-        <p>Hey, I'm Nikhil Raj.</p>
+        <!-- LEFT: INTRODUCTION -->
 
-        <p>
-          I'm a Computer Science undergraduate pursuing
-          B.Tech in CSE, with a growing interest in
-          software development and technology.
-        </p>
+        <div class="card about-main">
 
-        <p>
-          I'm currently strengthening my programming
-          fundamentals and exploring web development
-          through practical projects.
-        </p>
+          <p class="about-greeting">HELLO, WORLD! 👋</p>
 
-        <p>
-          I enjoy understanding how applications work,
-          experimenting with new technologies and
-          turning ideas into functional digital products.
-        </p>
+          <h3>
+            I'm Nikhil Raj<span>.</span>
+          </h3>
 
-        <p>
-          My current interests include frontend development,
-          JavaScript, modern web technologies and
-          exploring the possibilities of AI.
-        </p>
+          <p class="about-description">
+            A Computer Science undergraduate with a growing
+            passion for software development and technology.
+          </p>
+
+          <p>
+            I'm currently pursuing B.Tech in Computer Science
+            and Engineering, strengthening my programming
+            fundamentals and exploring web development
+            through hands-on projects.
+          </p>
+
+          <p>
+            I enjoy understanding how applications work,
+            experimenting with new technologies and turning
+            ideas into functional digital products.
+          </p>
+
+          <p class="about-signature">
+            Learning by building. Growing with every project.
+          </p>
+
+        </div>
+
+
+        <!-- RIGHT: INTERESTS -->
+
+        <div class="about-side">
+
+          <div class="card about-focus">
+
+            <p class="about-card-label">WHAT I'M INTO</p>
+
+            <h3>Areas of Interest</h3>
+
+            <ul class="about-interest-list">
+              <li>
+                <span>01</span>
+                <p>Frontend Development</p>
+              </li>
+
+              <li>
+                <span>02</span>
+                <p>JavaScript & Programming</p>
+              </li>
+
+              <li>
+                <span>03</span>
+                <p>Modern Web Technologies</p>
+              </li>
+
+              <li>
+                <span>04</span>
+                <p>Artificial Intelligence</p>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <div class="card about-currently">
+
+            <p class="about-card-label">CURRENTLY</p>
+
+            <h3>In Building Mode<span>.</span></h3>
+
+            <p>
+              Exploring technologies, developing projects
+              and continuously improving my problem-solving
+              and development skills.
+            </p>
+
+            <span class="about-status">
+              <span class="status-dot"></span>
+              Always learning
+            </span>
+
+          </div>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- Learning Journey -->
-    <section id="journey" class="content-section">
+    <!-- =========================================
+         LEARNING JOURNEY — DEVELOPER TIMELINE
+    ========================================= -->
+
+    <section id="journey" class="content-section journey-section">
 
       <p class="section-label">02 / THE PROCESS</p>
 
       <h2>My Learning Journey<span>.</span></h2>
 
-      <div class="card journey-card">
+      <p class="journey-intro">
+        Every project, every challenge and every new concept
+        is another step towards becoming a better developer.
+      </p>
 
-        <div class="journey-group">
+      <div class="journey-timeline">
 
-          <h3>01. Building Fundamentals</h3>
+        <!-- STAGE 01 -->
+
+        <article class="card journey-stage">
+
+          <div class="journey-stage-header">
+            <span class="journey-stage-number">01</span>
+            <span class="journey-stage-label">THE FOUNDATION</span>
+          </div>
+
+          <h3>Building Fundamentals<span>.</span></h3>
 
           <p>
             Developing a foundation in programming
@@ -124,12 +231,19 @@
             <li>Git and GitHub</li>
           </ul>
 
-        </div>
+        </article>
 
 
-        <div class="journey-group">
+        <!-- STAGE 02 -->
 
-          <h3>02. Learning by Building</h3>
+        <article class="card journey-stage">
+
+          <div class="journey-stage-header">
+            <span class="journey-stage-number">02</span>
+            <span class="journey-stage-label">PRACTICAL EXPERIENCE</span>
+          </div>
+
+          <h3>Learning by Building<span>.</span></h3>
 
           <p>
             Applying concepts through completed
@@ -144,12 +258,19 @@
             <li>Working with dynamic web content</li>
           </ul>
 
-        </div>
+        </article>
 
 
-        <div class="journey-group">
+        <!-- STAGE 03 -->
 
-          <h3>03. Current Focus</h3>
+        <article class="card journey-stage journey-current">
+
+          <div class="journey-stage-header">
+            <span class="journey-stage-number">03</span>
+            <span class="journey-stage-label">CURRENT FOCUS</span>
+          </div>
+
+          <h3>Growing as a Developer<span>.</span></h3>
 
           <p>
             Improving my development skills and
@@ -164,12 +285,16 @@
             <li>Problem Solving</li>
           </ul>
 
-        </div>
+          <span class="journey-active-status">
+            <span class="status-dot"></span>
+            Currently Learning
+          </span>
+
+        </article>
 
       </div>
 
     </section>
-
 
     <!-- =====================================================
        PROJECTS — PREMIUM SHOWCASE
@@ -187,47 +312,38 @@
         digital experiences.
       </p>
 
-
       <div class="project-grid">
 
-
-        <!-- ================================================
-           PROJECT 01 — FEATURED: NR86 PORTFOLIO
-      ================================================= -->
+        <!-- PROJECT 01 — NR86 PORTFOLIO -->
 
         <article class="card project-card featured-project">
 
           <div class="project-preview">
 
-            <img src="../Images/NR86-Portfolio.png" alt="NR86 personal developer portfolio website"
-              class="project-image" loading="lazy">
+            <img src="../Images/NR86-Portfolio.png" alt="Screenshot of the NR86 personal developer portfolio"
+              class="project-image" loading="lazy" decoding="async">
 
             <span class="preview-tag">FEATURED PROJECT</span>
 
           </div>
 
-
           <div class="project-content">
 
-            <p class="project-number">
-              PROJECT 01 / PERSONAL BRAND
-            </p>
+            <p class="project-number">PROJECT 01 / PERSONAL BRAND</p>
 
             <h3>NR86 Portfolio<span>.</span></h3>
 
             <p>
-              My personal developer portfolio, designed to
-              showcase my projects, technical interests and
-              learning journey through a clean, modern interface.
+              My personal developer portfolio, designed to showcase
+              my projects, technical interests and learning journey
+              through a clean, modern interface.
             </p>
-
 
             <div class="project-tech">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
-
 
             <div class="project-links">
 
@@ -246,26 +362,20 @@
         </article>
 
 
-
-        <!-- ================================================
-           PROJECT 02 — PIXELPULSE
-      ================================================= -->
+        <!-- PROJECT 02 — PIXELPULSE -->
 
         <article class="card project-card">
 
           <div class="project-preview">
 
-            <img src="../Images/LensLab.png" alt="PixelPulse web application interface" class="project-image"
-              loading="lazy">
+            <img src="../Images/LensLab.png" alt="Screenshot of the PixelPulse web application" class="project-image"
+              loading="lazy" decoding="async">
 
           </div>
 
-
           <div class="project-content">
 
-            <p class="project-number">
-              PROJECT 02 / WEB DEVELOPMENT
-            </p>
+            <p class="project-number">PROJECT 02 / WEB DEVELOPMENT</p>
 
             <h3>PixelPulse<span>.</span></h3>
 
@@ -275,13 +385,11 @@
               JavaScript array methods.
             </p>
 
-
             <div class="project-tech">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
-
 
             <div class="project-links">
 
@@ -300,26 +408,20 @@
         </article>
 
 
-
-        <!-- ================================================
-           PROJECT 03 — NEXTBITES
-      ================================================= -->
+        <!-- PROJECT 03 — NEXTBITES -->
 
         <article class="card project-card">
 
           <div class="project-preview">
 
-            <img src="../Images/Nextbites.png" alt="NextBites recipe discovery application" class="project-image"
-              loading="lazy">
+            <img src="../Images/Nextbites.png" alt="Screenshot of the NextBites recipe discovery application"
+              class="project-image" loading="lazy" decoding="async">
 
           </div>
 
-
           <div class="project-content">
 
-            <p class="project-number">
-              PROJECT 03 / RECIPE DISCOVERY
-            </p>
+            <p class="project-number">PROJECT 03 / RECIPE DISCOVERY</p>
 
             <h3>NextBites<span>.</span></h3>
 
@@ -328,13 +430,11 @@
               reusable recipe cards and dynamic recipe detail pages.
             </p>
 
-
             <div class="project-tech">
               <span>Next.js</span>
               <span>React</span>
               <span>TypeScript</span>
             </div>
-
 
             <div class="project-links">
 
@@ -349,26 +449,20 @@
         </article>
 
 
-
-        <!-- ================================================
-           PROJECT 04 — NR86 TO-DO APP
-      ================================================= -->
+        <!-- PROJECT 04 — NR86 TO-DO APP -->
 
         <article class="card project-card">
 
           <div class="project-preview">
 
-            <img src="../Images/To-Do App.png" alt="NR86 To-Do App task management interface" class="project-image"
-              loading="lazy">
+            <img src="../Images/To-Do App.png" alt="Screenshot of the NR86 To-Do application" class="project-image"
+              loading="lazy" decoding="async">
 
           </div>
 
-
           <div class="project-content">
 
-            <p class="project-number">
-              PROJECT 04 / PRODUCTIVITY
-            </p>
+            <p class="project-number">PROJECT 04 / PRODUCTIVITY</p>
 
             <h3>NR86 To-Do App<span>.</span></h3>
 
@@ -378,13 +472,11 @@
               and delete them.
             </p>
 
-
             <div class="project-tech">
-              <span>HTML5</span>
-              <span>CSS3</span>
+              <span>HTML</span>
+              <span>CSS</span>
               <span>JavaScript</span>
             </div>
-
 
             <div class="project-links">
 
@@ -401,7 +493,6 @@
           </div>
 
         </article>
-
 
       </div>
 
@@ -435,19 +526,35 @@
     </section>
 
 
-    <!-- Skills -->
-    <section id="skills" class="content-section">
+    <!-- =========================================
+         SKILLS — PREMIUM TOOLKIT
+    ========================================= -->
+
+    <section id="skills" class="content-section skills-section">
 
       <p class="section-label">05 / MY TOOLKIT</p>
 
       <h2>Technologies & Skills<span>.</span></h2>
 
-      <div class="card journey-card">
+      <p class="skills-intro">
+        The technologies I work with, the tools I use,
+        and the frameworks I'm currently exploring.
+      </p>
 
+      <div class="skills-grid">
 
-        <div class="journey-group">
+        <!-- WEB FUNDAMENTALS -->
+
+        <article class="card skill-category">
+
+          <div class="skill-category-header">
+            <span class="skill-category-icon" aria-hidden="true">⌘</span>
+            <span class="skill-category-number">01 / 04</span>
+          </div>
 
           <h3>Web Fundamentals</h3>
+
+          <p>Building structured, responsive web interfaces.</p>
 
           <div class="skills">
             <span class="skill">HTML</span>
@@ -455,24 +562,40 @@
             <span class="skill">Responsive Design</span>
           </div>
 
-        </div>
+        </article>
 
+        <!-- PROGRAMMING -->
 
-        <div class="journey-group">
+        <article class="card skill-category">
+
+          <div class="skill-category-header">
+            <span class="skill-category-icon" aria-hidden="true">{ }</span>
+            <span class="skill-category-number">02 / 04</span>
+          </div>
 
           <h3>Programming</h3>
+
+          <p>Developing logic and interactive functionality.</p>
 
           <div class="skills">
             <span class="skill">Python</span>
             <span class="skill">JavaScript</span>
           </div>
 
-        </div>
+        </article>
 
+        <!-- DEVELOPMENT TOOLS -->
 
-        <div class="journey-group">
+        <article class="card skill-category">
+
+          <div class="skill-category-header">
+            <span class="skill-category-icon" aria-hidden="true">⚙</span>
+            <span class="skill-category-number">03 / 04</span>
+          </div>
 
           <h3>Development Tools</h3>
+
+          <p>Tools that support my development workflow.</p>
 
           <div class="skills">
             <span class="skill">Git</span>
@@ -480,12 +603,20 @@
             <span class="skill">VS Code</span>
           </div>
 
-        </div>
+        </article>
 
+        <!-- CURRENTLY EXPLORING -->
 
-        <div class="journey-group">
+        <article class="card skill-category exploring-category">
+
+          <div class="skill-category-header">
+            <span class="skill-category-icon" aria-hidden="true">✦</span>
+            <span class="skill-category-number">04 / 04</span>
+          </div>
 
           <h3>Currently Exploring</h3>
+
+          <p>Technologies I'm actively learning and experimenting with.</p>
 
           <div class="skills">
             <span class="skill">React.js</span>
@@ -493,19 +624,17 @@
             <span class="skill">TypeScript</span>
           </div>
 
-        </div>
-
+        </article>
 
       </div>
 
-      <p>
-        I'm continuously learning and improving.
-        This list reflects my current learning journey,
+      <p class="skills-note">
+        Always learning. Always building.
+        These skills represent my current journey,
         not expert-level proficiency.
       </p>
 
     </section>
-
 
     <!-- =====================================================
          CONTACT — PREMIUM CLOSING SECTION
