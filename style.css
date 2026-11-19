@@ -198,11 +198,11 @@ img {
 
     background-color: var(--black);
 
-    /* Image path from BRAHMASTRA/style.css */
+    /* Hero background image */
     background-image:
         linear-gradient(rgba(8, 9, 10, 0.30),
             rgba(8, 9, 10, 0.42)),
-        url("../Images/hero-bg.png");
+        url("Images/hero-bg.png");
 
     background-position: center;
     background-size: cover;
