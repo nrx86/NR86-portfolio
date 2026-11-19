@@ -223,10 +223,9 @@
 
 
             <div class="project-tech">
-              <span>HTML5</span>
-              <span>CSS3</span>
+              <span>HTML</span>
+              <span>CSS</span>
               <span>JavaScript</span>
-              <span>Glassmorphism</span>
             </div>
 
 
@@ -508,72 +507,147 @@
     </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="content-section">
+    <!-- =====================================================
+         CONTACT — PREMIUM CLOSING SECTION
+    ===================================================== -->
+
+    <section id="contact" class="content-section contact-section">
 
       <p class="section-label">06 / GET IN TOUCH</p>
 
-      <h2>Let's Connect<span>.</span></h2>
+      <div class="contact-panel">
 
-      <div class="card contact-card">
+        <div class="contact-content">
 
-        <p>
-          Interested in connecting, discussing technology
-          or checking out my work? Feel free to reach out.
-        </p>
+          <p class="contact-eyebrow">HAVE A PROJECT IN MIND?</p>
 
-        <p>
-          <strong>Email</strong>
+          <h2>
+            Got an idea?<br>
+            Let's build <span>something.</span>
+          </h2>
 
-          <a href="mailto:nrx86raj@gmail.com">
-            nrx86raj@gmail.com
+          <p class="contact-description">
+            I'm always interested in connecting with people,
+            discussing technology, exploring ideas and learning
+            through new opportunities.
+          </p>
+
+          <a href="mailto:nrx86raj@gmail.com?subject=Let's%20Connect" class="contact-cta">
+            Let's Talk <span>↗</span>
           </a>
-        </p>
 
-        <p>
-          <strong>LinkedIn</strong>
+        </div>
 
-          <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer">
-            Connect on LinkedIn ↗
+
+        <div class="contact-divider"></div>
+
+
+        <div class="contact-socials">
+
+          <a href="mailto:nrx86raj@gmail.com" class="contact-social-link">
+            <span class="social-label">EMAIL</span>
+            <span class="social-value">nrx86raj@gmail.com ↗</span>
           </a>
-        </p>
 
-        <p>
-          <strong>GitHub</strong>
-
-          <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer">
-            Explore my repositories ↗
+          <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer"
+            class="contact-social-link">
+            <span class="social-label">LINKEDIN</span>
+            <span class="social-value">Connect with me ↗</span>
           </a>
-        </p>
+
+          <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+            <span class="social-label">GITHUB</span>
+            <span class="social-value">Explore my work ↗</span>
+          </a>
+
+        </div>
 
       </div>
 
     </section>
 
+
   </main>
 
 
-  <!-- Footer -->
+  <!-- =====================================================
+       NR86 — SIGNATURE FOOTER
+  ===================================================== -->
+
   <footer class="portfolio-footer">
 
-    <p>© 2026 Nikhil Raj | All Rights Reserved.</p>
+    <div class="footer-main">
 
-    <p>Built with curiosity and code.</p>
+      <!-- Brand -->
+      <div class="footer-brand">
 
-    <div class="socials">
+        <a href="index.html" class="footer-logo">
+          NR86<span>.</span>
+        </a>
 
-      <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer">
-        GitHub ↗
-      </a>
+        <p>
+          Learning. Building. Exploring.<br>
+          One project at a time.
+        </p>
 
-      <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer">
-        LinkedIn ↗
-      </a>
+      </div>
+
+
+      <!-- Quick Navigation -->
+      <div class="footer-navigation">
+
+        <p class="footer-heading">EXPLORE</p>
+
+        <a href="index.html">Home ↗</a>
+        <a href="#about">About ↗</a>
+        <a href="#projects">Projects ↗</a>
+        <a href="#contact">Contact ↗</a>
+
+      </div>
+
+
+      <!-- Social Links -->
+      <div class="footer-social">
+
+        <p class="footer-heading">FIND ME ONLINE</p>
+
+        <a href="https://github.com/nrx86" target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a href="https://www.linkedin.com/in/nrx86" target="_blank" rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+
+        <a href="https://www.instagram.com/nrx_86" target="_blank" rel="noopener noreferrer">
+          Instagram ↗
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 <span>NR86</span> — All Rights Reserved.
+      </p>
+
+      <p>
+        Built with curiosity and code <span>♥</span>
+      </p>
 
     </div>
 
   </footer>
 
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    ↑
+  </button>
 
   <!-- Active Navigation Script -->
   <script>
@@ -620,6 +694,95 @@
     window.addEventListener("load", updateActiveLink);
 
   </script>
+  <!-- Scroll Reveal Animation -->
+  <script>
+
+    // Enable reveal animations
+    document.body.classList.add("js-reveal-enabled");
+
+    // Select elements to animate
+    const revealElements = document.querySelectorAll(
+      ".content-section, .project-card, .profile-header"
+    );
+
+    // Add reveal class
+    revealElements.forEach(element => {
+      element.classList.add("reveal");
+    });
+
+    // Check browser support
+    if ("IntersectionObserver" in window) {
+
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("is-visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      revealElements.forEach(element => {
+        revealObserver.observe(element);
+      });
+
+    } else {
+
+      // Fallback for older browsers
+      revealElements.forEach(element => {
+        element.classList.add("is-visible");
+      });
+
+    }
+
+  </script>
+
+  <!-- Back To Top Functionality -->
+  <script>
+
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show or hide button based on scroll position
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 400) {
+        backToTopButton.classList.add("visible");
+      } else {
+        backToTopButton.classList.remove("visible");
+      }
+
+    }, { passive: true });
+
+
+    // Scroll to the top when clicked
+    backToTopButton.addEventListener("click", () => {
+
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      window.scrollTo({
+        top: 0,
+        behavior: reduceMotion ? "instant" : "smooth"
+      });
+
+    });
+
+  </script>
+
 
 </body>
 
