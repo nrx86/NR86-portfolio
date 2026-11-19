@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
@@ -12,6 +13,7 @@
 
   <title>Nikhil Raj | Developer Portfolio</title>
 
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,6 +21,7 @@
 
   <!-- Navigation -->
   <nav class="main-nav" aria-label="Main navigation">
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#about" class="active">About</a></li>
@@ -28,13 +31,14 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
   </nav>
 
 
   <!-- Profile Header -->
   <header class="profile-header">
 
-    <img src="PFP.jpeg" alt="Portrait of Nikhil Raj">
+    <img src="../Images/PFP.jpeg" alt="Portrait of Nikhil Raj">
 
     <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
@@ -128,14 +132,15 @@
           <h3>02. Learning by Building</h3>
 
           <p>
-            Applying concepts through small projects
-            and practical development exercises.
+            Applying concepts through completed
+            projects and practical development exercises.
           </p>
 
           <ul>
             <li>Personal Portfolio Website</li>
-            <li>PixelPulse Learning Project</li>
-            <li>NextBites Development</li>
+            <li>NR86 To-Do App</li>
+            <li>PixelPulse</li>
+            <li>NextBites</li>
             <li>Working with dynamic web content</li>
           </ul>
 
@@ -166,144 +171,243 @@
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects" class="content-section">
+    <!-- =====================================================
+       PROJECTS — PREMIUM SHOWCASE
+  ===================================================== -->
+
+    <section id="projects" class="content-section projects-section">
 
       <p class="section-label">03 / SELECTED WORK</p>
 
-      <h2>Projects<span>.</span></h2>
+      <h2>Things I've Built<span>.</span></h2>
 
-      <p>
-        A collection of applications and websites I've built
-        while exploring software and web development.
+      <p class="projects-intro">
+        A collection of projects built while learning,
+        experimenting and turning ideas into functional
+        digital experiences.
       </p>
+
 
       <div class="project-grid">
 
-        <!-- Project 01: Personal Portfolio -->
-        <article class="card project-card">
 
-          <p class="project-number">PROJECT 01</p>
+        <!-- ================================================
+           PROJECT 01 — FEATURED: NR86 PORTFOLIO
+      ================================================= -->
 
-          <h3>NR86 Portfolio</h3>
+        <article class="card project-card featured-project">
 
-          <p>
-            My personal developer portfolio, designed to
-            introduce who I am, showcase my projects and
-            share my journey in technology.
-          </p>
+          <div class="project-preview">
 
-          <p class="tech-label">
-            HTML · CSS · JavaScript
-          </p>
+            <img src="../Images/NR86-Portfolio.png" alt="NR86 personal developer portfolio website"
+              class="project-image" loading="lazy">
 
-          <div class="project-links">
+            <span class="preview-tag">FEATURED PROJECT</span>
 
-            <a href="https://nrx86.github.io/NR86-portfolio/" target="_blank" rel="noopener noreferrer">
-              Live Website ↗
-            </a>
+          </div>
 
-            <a href="https://github.com/nrx86/NR86-portfolio" target="_blank" rel="noopener noreferrer">
-              GitHub ↗
-            </a>
+
+          <div class="project-content">
+
+            <p class="project-number">
+              PROJECT 01 / PERSONAL BRAND
+            </p>
+
+            <h3>NR86 Portfolio<span>.</span></h3>
+
+            <p>
+              My personal developer portfolio, designed to
+              showcase my projects, technical interests and
+              learning journey through a clean, modern interface.
+            </p>
+
+
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Glassmorphism</span>
+            </div>
+
+
+            <div class="project-links">
+
+              <a href="https://nrx86.github.io/NR86-portfolio/" target="_blank" rel="noopener noreferrer">
+                Live Website ↗
+              </a>
+
+              <a href="https://github.com/nrx86/NR86-portfolio" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+              </a>
+
+            </div>
 
           </div>
 
         </article>
 
 
-        <!-- Project 02: To-Do App -->
+
+        <!-- ================================================
+           PROJECT 02 — PIXELPULSE
+      ================================================= -->
+
         <article class="card project-card">
 
-          <p class="project-number">PROJECT 02</p>
+          <div class="project-preview">
 
-          <h3>NR86 To-Do App</h3>
+            <img src="../Images/LensLab.png" alt="PixelPulse web application interface" class="project-image"
+              loading="lazy">
 
-          <p>
-            A simple and interactive task management
-            application with a cricket-inspired visual design.
-            Users can add tasks, mark them as completed
-            and delete them.
-          </p>
+          </div>
 
-          <p class="tech-label">
-            HTML5 · CSS3 · JavaScript
-          </p>
 
-          <div class="project-links">
+          <div class="project-content">
 
-            <a href="https://nr86-todo.netlify.app/" target="_blank" rel="noopener noreferrer">
-              Live Demo ↗
-            </a>
+            <p class="project-number">
+              PROJECT 02 / WEB DEVELOPMENT
+            </p>
 
-            <a href="https://github.com/nrx86/To-Do-App" target="_blank" rel="noopener noreferrer">
-              GitHub ↗
-            </a>
+            <h3>PixelPulse<span>.</span></h3>
+
+            <p>
+              A web development project featuring an interactive
+              interface, data fetching and rendering, and
+              JavaScript array methods.
+            </p>
+
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+
+            <div class="project-links">
+
+              <a href="https://nrx86.github.io/PixelPulse/" target="_blank" rel="noopener noreferrer">
+                Live Demo ↗
+              </a>
+
+              <a href="https://github.com/nrx86/PixelPulse" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+              </a>
+
+            </div>
 
           </div>
 
         </article>
 
 
-        <!-- Project 03: PixelPulse -->
+
+        <!-- ================================================
+           PROJECT 03 — NEXTBITES
+      ================================================= -->
+
         <article class="card project-card">
 
-          <p class="project-number">PROJECT 03</p>
+          <div class="project-preview">
 
-          <h3>PixelPulse</h3>
+            <img src="../Images/Nextbites.png" alt="NextBites recipe discovery application" class="project-image"
+              loading="lazy">
 
-          <p>
-            A web development project focused on building
-            a structured interface, fetching and rendering
-            data, and working with JavaScript array methods.
-          </p>
+          </div>
 
-          <p class="tech-label">
-            HTML · CSS · JavaScript
-          </p>
 
-          <div class="project-links">
+          <div class="project-content">
 
-            <a href="https://nrx86.github.io/PixelPulse/" target="_blank" rel="noopener noreferrer">
-              Live Demo ↗
-            </a>
+            <p class="project-number">
+              PROJECT 03 / RECIPE DISCOVERY
+            </p>
+
+            <h3>NextBites<span>.</span></h3>
+
+            <p>
+              A recipe discovery application featuring live search,
+              reusable recipe cards and dynamic recipe detail pages.
+            </p>
+
+
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+            </div>
+
+
+            <div class="project-links">
+
+              <a href="https://github.com/nrx86/nextbites" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+              </a>
+
+            </div>
 
           </div>
 
         </article>
 
 
-        <!-- Project 04: NextBites -->
+
+        <!-- ================================================
+           PROJECT 04 — NR86 TO-DO APP
+      ================================================= -->
+
         <article class="card project-card">
 
-          <p class="project-number">PROJECT 04</p>
+          <div class="project-preview">
 
-          <h3>NextBites</h3>
+            <img src="../Images/To-Do App.png" alt="NR86 To-Do App task management interface" class="project-image"
+              loading="lazy">
 
-          <p>
-            A recipe discovery application featuring
-            live search and dynamic recipe detail pages.
-            Built with reusable components and modern
-            frontend technologies.
-          </p>
+          </div>
 
-          <p class="tech-label">
-            Next.js · TypeScript · React
-          </p>
 
-          <div class="project-links">
+          <div class="project-content">
 
-            <a href="https://github.com/nrx86/nextbites" target="_blank" rel="noopener noreferrer">
-              GitHub ↗
-            </a>
+            <p class="project-number">
+              PROJECT 04 / PRODUCTIVITY
+            </p>
+
+            <h3>NR86 To-Do App<span>.</span></h3>
+
+            <p>
+              A simple and interactive task management application
+              that allows users to add tasks, mark them as completed
+              and delete them.
+            </p>
+
+
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+
+
+            <div class="project-links">
+
+              <a href="https://nr86-todo.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Live Demo ↗
+              </a>
+
+              <a href="https://github.com/nrx86/To-Do-App" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+              </a>
+
+            </div>
 
           </div>
 
         </article>
+
 
       </div>
 
     </section>
+
 
     <!-- Current Exploration -->
     <section id="exploring" class="content-section">
@@ -391,6 +495,7 @@
           </div>
 
         </div>
+
 
       </div>
 
